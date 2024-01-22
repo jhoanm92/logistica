@@ -1,0 +1,39 @@
+spring:
+#  jpa:
+#    database: POSTGRESQL
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+
+#  datasource:
+#    driverClassName: org.postgresql.Driver
+#    url: jdbc:postgresql://localhost:5432/logistica
+#    username : postgres
+#    password: 0666
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:client
+    username: admin
+    password: admin
+
+  h2:
+    console:
+      enabled: true
+
+logging:
+  level:
+    com:
+      client: INFO
+server:
+  port: 8080
+#springdoc:
+#  swagger-ui:
+#    path=/swagger-ui:
+#      html: /swagger-ui.html
