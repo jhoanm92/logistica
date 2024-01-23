@@ -2,14 +2,12 @@ package com.logistica.api.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.ToString;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Data
 @Entity
-@ToString
 @Table(name = "envios")
 public class Envio {
 

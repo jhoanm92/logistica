@@ -1,31 +1,15 @@
 spring:
-#  jpa:
-#    database: POSTGRESQL
-#    show-sql: true
-#    hibernate:
-#      ddl-auto: update
-
-#  datasource:
-#    driverClassName: org.postgresql.Driver
-#    url: jdbc:postgresql://localhost:5432/logistica
-#    username : postgres
-#    password: 0666
-
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
+    database: POSTGRESQL
     show-sql: true
     hibernate:
       ddl-auto: update
 
   datasource:
-    driverClassName: org.h2.Driver
-    url: jdbc:h2:mem:client
-    username: admin
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/logistica
+    username : postgres
     password: admin
-
-  h2:
-    console:
-      enabled: true
 
 logging:
   level:
